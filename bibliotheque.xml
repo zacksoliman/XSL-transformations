@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-model href="file:/home/danglewaggle/development/assignments/web_dev/bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
 <bibliotheque>
     <auteur ident = 'ID4355'>
         <!-- Unordered -->
@@ -11,7 +11,7 @@
         <photo></photo>
         <commentaire></commentaire>
     </auteur>
-    <livre langue='English' >
+    <livre auteurs="ID4355" langue='English' >
         <titre></titre>
         <annee>1989</annee>
         <prix>

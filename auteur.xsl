@@ -11,7 +11,7 @@
 
       <xsl:template match="/">
         <html>
-          <head><title>Auteurs</title><head>
+          <head><title>Auteurs</title></head>
           <body>
             <xsl:apply-templates/>
           </body>
