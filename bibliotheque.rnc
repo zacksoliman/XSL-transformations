@@ -23,7 +23,7 @@ info_livre = element titre {text},
              element annee {xsd:gYear},
              element prix {
                 element valeur{
-                  attribute monnaie {text},
+                  attribute monnaie {text}?,
                   text
                 }
                 },
