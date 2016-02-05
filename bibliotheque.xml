@@ -1,35 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <bibliotheque>
-    <auteur ident = 'ID4355'>
+    <auteur ident = 'grrm'>
         <!-- Unordered -->
-        <nom></nom>
-        <prenom></prenom>
+        <nom>Martin</nom>
+        <prenom>George</prenom>
+        <!-- optional in order-->
+        <pays>États-Unis</pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire></commentaire>
+    </auteur>
+    <auteur ident = 'asimov'>
+        <!-- Unordered -->
+        <nom>Asimov</nom>
+        <prenom>Isaac</prenom>
+        <!-- optional in order-->
+        <pays>URSS</pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire>A vécu aux États-Unis à partir de l'âge de 3 ans.</commentaire>
+    </auteur>
+    <auteur ident = 'orwell'>
+        <!-- Unordered -->
+        <nom>Orwell</nom>
+        <prenom>George</prenom>
         <!-- optional in order-->
         <pays></pays>
         <!-- image URL -->
         <photo></photo>
         <commentaire></commentaire>
     </auteur>
+    <auteur ident = 'herbert'>
+        <!-- Unordered -->
+        <nom></nom>
+        <prenom></prenom>
+        <!-- optional in order-->
+        <pays>États-Unis</pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire></commentaire>
+    </auteur>
+    <auteur ident = 'huxley'>
+        <!-- Unordered -->
+        <nom>Huxley</nom>
+        <prenom>Aldous</prenom>
+        <!-- optional in order-->
+        <pays>Royaume-Uni</pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire></commentaire>
+    </auteur>
+    <auteur ident = 'vernes'>
+        <!-- Unordered -->
+        <nom>Vernes</nom>
+        <prenom>Jules</prenom>
+        <!-- optional in order-->
+        <pays>France</pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire></commentaire>
+    </auteur>
     <livre langue='English' >
-        <titre></titre>
-        <annee>1989</annee>
+        <titre>The End of Eternity</titre>
+        <annee>1955</annee>
+        <auteurs IDREF='asimov'/>
         <prix>
-            <valeur monnaie='optionel'></valeur>
+            <valeur monnaie='CAD'>10$</valeur>
         </prix>
         <!-- Optional -->
-        <couverture></couverture>
-        <film></film>
-        <commentaire></commentaire>
+        <couverture>https://upload.wikimedia.org/wikipedia/en/8/82/End_of_eternity.jpg</couverture>
+        <film>Konets Vechnosti (URSS, 1987)</film>
+        <commentaire>Science-fiction</commentaire>
         <personnage>
             <!-- Unordered -->
-            <nom></nom>
-            <prenom></prenom>
+            <nom>Harlan</nom>
+            <prenom>Andrew</prenom>
+            <!-- optional in order-->
+            <pays>N/A</pays>
+            <!-- image URL -->
+            <photo>N/A</photo>
+            <commentaire>Personnage principal</commentaire>
+        </personnage>
+    </livre>
+    <livre langue='English' >
+        <titre>A Game of Thrones</titre>
+        <annee>1996</annee>
+        <auteurs IDREF='grrm'/>
+        <prix>
+            <valeur monnaie='CAD'>8$</valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/AGameOfThrones.jpg/220px-AGameOfThrones.jpg</couverture>
+        <film>N/A</film>
+        <commentaire>Premier livre de la série</commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Stark</nom>
+            <prenom>Arya</prenom>
+            <!-- optional in order-->
+            <pays>N/A</pays>
+            <!-- image URL -->
+            <photo>http://media4.popsugar-assets.com/files/2014/08/28/937/n/3019466/2d8695defdbd0e64_5048185/i/Arya-Stark.jpg</photo>
+            <commentaire>Fille cadette de la famille Stark</commentaire>
+        </personnage>
+    </livre> 
+    <livre langue='English' >
+        <titre>1984</titre>
+        <annee>1948</annee>
+        <auteurs IDREF='orwell'/>
+        <prix>
+            <valeur monnaie='CAD'>12$</valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/1984first.jpg/220px-1984first.jpg</couverture>
+        <film>1984 (Royaume-Uni, 1984)</film>
+        <commentaire>Roman d'anticipation</commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Smith</nom>
+            <prenom>Winston</prenom>
+            <!-- optional in order-->
+            <pays>Océanie (Pays fictif)</pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire>Personnage principal</commentaire>
+        </personnage>
+    </livre> 
+    <livre langue='English' >
+        <titre>Dune</titre>
+        <annee>1965</annee>
+        <auteurs IDREF="herbert"/>
+        <prix>
+            <valeur monnaie='CAD'>15$</valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/FrankHerbert_Dune_1st.jpg/220px-FrankHerbert_Dune_1st.jpg</couverture>
+        <film>Dune (États-Unis, 1984)</film>
+        <commentaire>Roman de science fiction le plus vendu</commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Atreides</nom>
+            <prenom>Paul</prenom>
             <!-- optional in order-->
             <pays></pays>
             <!-- image URL -->
             <photo></photo>
-            <commentaire></commentaire>
+            <commentaire>Personnage principal</commentaire>
         </personnage>
-    </livre>    
+    </livre> 
+    <livre langue='Francais' >
+        <titre>Le Tour du monde en quatre-vingts jours</titre>
+        <annee>1874</annee>
+        <auteurs IDREF="vernes"/>
+         <prix>
+            <valeur monnaie='CAD'>8.75$</valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture>https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Verne_Tour_du_Monde.jpg/250px-Verne_Tour_du_Monde.jpg</couverture>
+        <film></film>
+        <commentaire></commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Fogg</nom>
+            <prenom>Phileas</prenom>
+            <!-- optional in order-->
+            <pays>Royaume-Uni</pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire>Personnage principal</commentaire>
+        </personnage>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Passepartout</nom>
+            <prenom>Jean</prenom>
+            <!-- optional in order-->
+            <pays>France</pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire>Personnage principal, domestique de Phileas Fogg</commentaire>
+        </personnage>
+    </livre> 
+    <livre langue='Francais' >
+        <titre>Le meilleur des mondes</titre>
+        <annee>1931</annee>
+        <auteurs IDREF="huxley"/>
+        <prix>
+            <valeur monnaie='CAD'>9.25$</valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture>http://ecx.images-amazon.com/images/I/510JoZuWBWL._SX299_BO1,204,203,200_.jpg</couverture>
+        <film></film>
+        <commentaire>Titre original: Brave New World</commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Marx</nom>
+            <prenom>Bernard</prenom>
+            <!-- optional in order-->
+            <pays></pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire>Personnage principal</commentaire>
+        </personnage>
+        <personnage>
+            <!-- Unordered -->
+            <nom>Crowne</nom>
+            <prenom>Lénina</prenom>
+            <!-- optional in order-->
+            <pays></pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire>Deuxième personnage principal</commentaire>
+        </personnage>
+    </livre> 
 </bibliotheque>
