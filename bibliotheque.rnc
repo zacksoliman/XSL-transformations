@@ -13,8 +13,8 @@ bibliotheque = element bibliotheque {
                         }
                       }
 
-info_pers = element nom {text},
-            element prenom {text},
+info_pers = (element nom {text}
+            & element prenom {text}),
             element pays {text}?,
             element photo {xsd:anyURI}?,
             element commentaire {text}?
