@@ -8,6 +8,7 @@ bibliotheque = element bibliotheque {
                         info_pers
                         },
                         element livre {
+                          attribute auteurs { xsd:IDREFS },
                           attribute langue{ xsd:language },
                           info_livre
                         }
@@ -23,11 +24,11 @@ info_livre = element titre {text},
              element annee {xsd:gYear},
              element prix {
                 element valeur{
-                  attribute monnaie {text},
-                  text
+                  attribute monnaie { text }?,
+                  xsd:decimal
                 }
                 },
                 element couverture {xsd:anyURI}?,
-                element film {text}?,
+                element film { xsd:anyURI }?,
                 element commentaire{text}?,
-                element personnage { info_pers }?
+                element personnage { info_pers }*
