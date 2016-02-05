@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bibliotheque>
+    <auteur ident = 'ID4355'>
+        <!-- Unordered -->
+        <nom></nom>
+        <prenom></prenom>
+        <!-- optional in order-->
+        <pays></pays>
+        <!-- image URL -->
+        <photo></photo>
+        <commentaire></commentaire>
+    </auteur>
+    <livre langue='English' >
+        <titre></titre>
+        <annee>1989</annee>
+        <prix>
+            <valeur monnaie='optionel'></valeur>
+        </prix>
+        <!-- Optional -->
+        <couverture></couverture>
+        <film></film>
+        <commentaire></commentaire>
+        <personnage>
+            <!-- Unordered -->
+            <nom></nom>
+            <prenom></prenom>
+            <!-- optional in order-->
+            <pays></pays>
+            <!-- image URL -->
+            <photo></photo>
+            <commentaire></commentaire>
+        </personnage>
+    </livre>    
+</bibliotheque>
