@@ -10,7 +10,7 @@
         <prenom>George</prenom>
         <!-- optional in order-->
         <pays>États-Unis</pays>
-        <photo></photo>
+        <photo>http://www-images.theonering.org/torwp/wp-content/uploads/2015/08/George-RR-Martin-thumb.jpg</photo>
     </auteur>
     <auteur ident = 'asimov'>
         <!-- Unordered -->
@@ -19,7 +19,7 @@
         <!-- optional in order-->
         <pays>URSS</pays>
         <!-- image URL -->
-        <photo></photo>
+        <photo>https://upload.wikimedia.org/wikipedia/commons/3/34/Isaac.Asimov01.jpg</photo>
         <commentaire>A vécu aux États-Unis à partir de l'âge de 3 ans.</commentaire>
     </auteur>
     <auteur ident = 'orwell'>
@@ -27,10 +27,10 @@
         <nom>Orwell</nom>
         <prenom>George</prenom>
         <!-- optional in order-->
-        <pays></pays>
+        <pays>Royaume-Uni</pays>
         <!-- image URL -->
-        <photo></photo>
-        <commentaire></commentaire>
+        <photo>https://upload.wikimedia.org/wikipedia/commons/7/7e/George_Orwell_press_photo.jpg</photo>
+        <commentaire>Participe à la révolution espagnole de 1936</commentaire>
     </auteur>
     <auteur ident = 'herbert'>
         <!-- Unordered -->
@@ -39,7 +39,7 @@
         <!-- optional in order-->
         <pays>États-Unis</pays>
         <!-- image URL -->
-        <photo></photo>
+        <photo>http://www.zone-sf.com/images/frankherbert.jpg</photo>
         <commentaire></commentaire>
     </auteur>
     <auteur ident = 'huxley'>
@@ -49,7 +49,7 @@
         <!-- optional in order-->
         <pays>Royaume-Uni</pays>
         <!-- image URL -->
-        <photo></photo>
+        <photo>https://upload.wikimedia.org/wikipedia/commons/1/17/Aldous_Huxley.gif</photo>
         <commentaire></commentaire>
     </auteur>
     <auteur ident = 'vernes'>
@@ -99,7 +99,7 @@
     </livre> 
     <livre langue='English' auteurs='orwell'>
         <titre>1984</titre>
-        <annee>1948</annee>
+        <annee>1949</annee>
         <prix>
             <valeur monnaie='CAD'>12.00</valeur>
         </prix>
@@ -164,7 +164,7 @@
     </livre> 
     <livre langue='Francais' auteurs="huxley">
         <titre>Le meilleur des mondes</titre>
-        <annee>1931</annee>
+        <annee>1932</annee>
         <prix>
             <valeur monnaie='CAD'>9.25</valeur>
         </prix>
