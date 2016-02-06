@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="auteur.xsl"?> 
-<?xml-stylesheet type="text/xsl" href="livre.xsl"?> 
+<?xml-stylesheet type="text/xsl" href="auteur.xsl"?>
+<?xml-stylesheet type="text/xsl" href="livre.xsl"?>
 
 <bibliotheque>
     <auteur ident = 'grrm'>
@@ -89,14 +89,12 @@
         <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/AGameOfThrones.jpg/220px-AGameOfThrones.jpg</couverture>
         <commentaire>Premier livre de la série</commentaire>
         <personnage>
-            <!-- Unordered -->
             <nom>Stark</nom>
             <prenom>Arya</prenom>
-            <!-- image URL -->
             <photo>http://media4.popsugar-assets.com/files/2014/08/28/937/n/3019466/2d8695defdbd0e64_5048185/i/Arya-Stark.jpg</photo>
             <commentaire>Fille cadette de la famille Stark</commentaire>
         </personnage>
-    </livre> 
+    </livre>
     <livre langue='English' auteurs='orwell'>
         <titre>1984</titre>
         <annee>1949</annee>
@@ -115,7 +113,7 @@
             <pays>Océanie (Pays fictif)</pays>
             <commentaire>Personnage principal</commentaire>
         </personnage>
-    </livre> 
+    </livre>
     <livre langue='English' auteurs="herbert">
         <titre>Dune</titre>
         <annee>1965</annee>
@@ -132,7 +130,7 @@
             <prenom>Paul</prenom>
             <commentaire>Personnage principal</commentaire>
         </personnage>
-    </livre> 
+    </livre>
     <livre langue='Francais' auteurs="vernes">
         <titre>Le Tour du monde en quatre-vingts jours</titre>
         <annee>1874</annee>
@@ -161,7 +159,7 @@
             <pays>France</pays>
             <commentaire>Personnage principal, domestique de Phileas Fogg</commentaire>
         </personnage>
-    </livre> 
+    </livre>
     <livre langue='Francais' auteurs="huxley">
         <titre>Le meilleur des mondes</titre>
         <annee>1932</annee>
@@ -184,5 +182,5 @@
             <prenom>Lénina</prenom>
             <commentaire>Deuxième personnage principal</commentaire>
         </personnage>
-    </livre> 
+    </livre>
 </bibliotheque>
