@@ -20,7 +20,7 @@
   <xsl:template match="bibliotheque">
     <!-- Displaying authors information -->
     <xsl:for-each select="auteur">
-      <h2><xsl:value-of select="nom"/>, <xsl:value-of select="prenom"/></h2>
+      <h2><xsl:value-of select="concat(nom,', ',prenom)"/></h2>
       <h3><xsl:value-of select="pays"/></h3>
       <!-- Author's photo -->
       <img height='200px' width="200px" align="right">

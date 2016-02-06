@@ -20,16 +20,49 @@
     
     <xsl:template match="bibliotheque">
         <h1>Bibliotheque</h1>
-        <table>
-            <th>Titre</th>
-            <th>Converture</th>
-            <th>Auteur(s)</th>
-            <th>Annee de publication</th>
-            <th>Prix</th>
-        </table>
-        <xsl:for-each select="livre">
-            
-        </xsl:for-each>
+        <table border="1">
+            <tr>
+                <th>Titre</th>
+                <th>Couverture</th>
+                <th>Auteur(s)</th>
+                <th>Annee de publication</th>
+                <th>Prix</th>                
+            </tr>
+            <xsl:apply-templates select="livre"/>
+       
+        </table>        
+    </xsl:template>
+    
+    <xsl:template match="livre">
+        <tr>
+            <!-- Titre -->
+            <td><xsl:value-of select="titre"/></td>
+            <td>
+                <!-- Couverture -->
+                <img height="250px" width="150px">
+                    <xsl:attribute name="src"><xsl:value-of select="couverture"/></xsl:attribute>                            
+                </img>
+            </td>     
+            <!-- Auteurs -->
+            <td>
+                <ul>
+                    <xsl:for-each select="key('author-search',@auteurs)">
+                        <li><xsl:value-of select="concat(nom,', ',prenom)"/></li>
+                    </xsl:for-each>
+                </ul>
+            </td>
+            <!-- Annee de publication -->
+            <td><xsl:value-of select="annee"/></td>
+            <!-- Adaptation film -->
+            <td>
+                <a>
+                    <xsl:attribute name="href"><xsl:value-of select="film"/></xsl:attribute>
+                    Adaption au Cinema
+                </a>
+            </td>
+            <!-- Prix -->
+            <td><xsl:value-of select="concat(prix/valeur, ' ' ,prix/valeur/@monnaie)"/></td>                    
+        </tr>
     </xsl:template>
     
 </xsl:stylesheet>
