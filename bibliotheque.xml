@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="auteur.xsl"?> 
+<?xml-stylesheet type="text/xsl" href="livre.xsl"?> 
 
 <bibliotheque>
     <auteur ident = 'grrm'>
@@ -7,9 +10,7 @@
         <prenom>George</prenom>
         <!-- optional in order-->
         <pays>États-Unis</pays>
-        <!-- image URL -->
         <photo></photo>
-        <commentaire></commentaire>
     </auteur>
     <auteur ident = 'asimov'>
         <!-- Unordered -->
@@ -33,8 +34,8 @@
     </auteur>
     <auteur ident = 'herbert'>
         <!-- Unordered -->
-        <nom></nom>
-        <prenom></prenom>
+        <nom>Hebert</nom>
+        <prenom>Frank</prenom>
         <!-- optional in order-->
         <pays>États-Unis</pays>
         <!-- image URL -->
@@ -61,12 +62,11 @@
         <photo></photo>
         <commentaire></commentaire>
     </auteur>
-    <livre langue='English' >
+    <livre langue='English' auteurs='asimov'>
         <titre>The End of Eternity</titre>
         <annee>1955</annee>
-        <auteurs IDREF='asimov'/>
         <prix>
-            <valeur monnaie='CAD'>10$</valeur>
+            <valeur monnaie='CAD'>10.00</valeur>
         </prix>
         <!-- Optional -->
         <couverture>https://upload.wikimedia.org/wikipedia/en/8/82/End_of_eternity.jpg</couverture>
@@ -76,41 +76,32 @@
             <!-- Unordered -->
             <nom>Harlan</nom>
             <prenom>Andrew</prenom>
-            <!-- optional in order-->
-            <pays>N/A</pays>
-            <!-- image URL -->
-            <photo>N/A</photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
     </livre>
-    <livre langue='English' >
+    <livre langue='English' auteurs='grrm'>
         <titre>A Game of Thrones</titre>
         <annee>1996</annee>
-        <auteurs IDREF='grrm'/>
         <prix>
-            <valeur monnaie='CAD'>8$</valeur>
+            <valeur monnaie='CAD'>8.00</valeur>
         </prix>
         <!-- Optional -->
         <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/9/93/AGameOfThrones.jpg/220px-AGameOfThrones.jpg</couverture>
-        <film>N/A</film>
         <commentaire>Premier livre de la série</commentaire>
         <personnage>
             <!-- Unordered -->
             <nom>Stark</nom>
             <prenom>Arya</prenom>
-            <!-- optional in order-->
-            <pays>N/A</pays>
             <!-- image URL -->
             <photo>http://media4.popsugar-assets.com/files/2014/08/28/937/n/3019466/2d8695defdbd0e64_5048185/i/Arya-Stark.jpg</photo>
             <commentaire>Fille cadette de la famille Stark</commentaire>
         </personnage>
     </livre> 
-    <livre langue='English' >
+    <livre langue='English' auteurs='orwell'>
         <titre>1984</titre>
         <annee>1948</annee>
-        <auteurs IDREF='orwell'/>
         <prix>
-            <valeur monnaie='CAD'>12$</valeur>
+            <valeur monnaie='CAD'>12.00</valeur>
         </prix>
         <!-- Optional -->
         <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/1984first.jpg/220px-1984first.jpg</couverture>
@@ -122,17 +113,14 @@
             <prenom>Winston</prenom>
             <!-- optional in order-->
             <pays>Océanie (Pays fictif)</pays>
-            <!-- image URL -->
-            <photo></photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
     </livre> 
-    <livre langue='English' >
+    <livre langue='English' auteurs="herbert">
         <titre>Dune</titre>
         <annee>1965</annee>
-        <auteurs IDREF="herbert"/>
         <prix>
-            <valeur monnaie='CAD'>15$</valeur>
+            <valeur monnaie='CAD'>15.00</valeur>
         </prix>
         <!-- Optional -->
         <couverture>https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/FrankHerbert_Dune_1st.jpg/220px-FrankHerbert_Dune_1st.jpg</couverture>
@@ -142,19 +130,14 @@
             <!-- Unordered -->
             <nom>Atreides</nom>
             <prenom>Paul</prenom>
-            <!-- optional in order-->
-            <pays></pays>
-            <!-- image URL -->
-            <photo></photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
     </livre> 
-    <livre langue='Francais' >
+    <livre langue='Francais' auteurs="vernes">
         <titre>Le Tour du monde en quatre-vingts jours</titre>
         <annee>1874</annee>
-        <auteurs IDREF="vernes"/>
          <prix>
-            <valeur monnaie='CAD'>8.75$</valeur>
+            <valeur monnaie='CAD'>8.75</valeur>
         </prix>
         <!-- Optional -->
         <couverture>https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Verne_Tour_du_Monde.jpg/250px-Verne_Tour_du_Monde.jpg</couverture>
@@ -176,17 +159,14 @@
             <prenom>Jean</prenom>
             <!-- optional in order-->
             <pays>France</pays>
-            <!-- image URL -->
-            <photo></photo>
             <commentaire>Personnage principal, domestique de Phileas Fogg</commentaire>
         </personnage>
     </livre> 
-    <livre langue='Francais' >
+    <livre langue='Francais' auteurs="huxley">
         <titre>Le meilleur des mondes</titre>
         <annee>1931</annee>
-        <auteurs IDREF="huxley"/>
         <prix>
-            <valeur monnaie='CAD'>9.25$</valeur>
+            <valeur monnaie='CAD'>9.25</valeur>
         </prix>
         <!-- Optional -->
         <couverture>http://ecx.images-amazon.com/images/I/510JoZuWBWL._SX299_BO1,204,203,200_.jpg</couverture>
@@ -196,20 +176,12 @@
             <!-- Unordered -->
             <nom>Marx</nom>
             <prenom>Bernard</prenom>
-            <!-- optional in order-->
-            <pays></pays>
-            <!-- image URL -->
-            <photo></photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
         <personnage>
             <!-- Unordered -->
             <nom>Crowne</nom>
             <prenom>Lénina</prenom>
-            <!-- optional in order-->
-            <pays></pays>
-            <!-- image URL -->
-            <photo></photo>
             <commentaire>Deuxième personnage principal</commentaire>
         </personnage>
     </livre> 

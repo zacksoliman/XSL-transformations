@@ -6,12 +6,12 @@ bibliotheque = element bibliotheque {
                       element auteur {
                         attribute ident { xsd:ID },
                         info_pers
-                        },
+                        }+,
                         element livre {
                           attribute auteurs { xsd:IDREFS },
                           attribute langue{ xsd:language },
                           info_livre
-                        }
+                        }+
                       }
 
 info_pers = (element nom {text}
