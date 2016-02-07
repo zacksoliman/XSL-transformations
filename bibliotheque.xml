@@ -126,6 +126,7 @@
             <!-- Unordered -->
             <nom>Atreides</nom>
             <prenom>Paul</prenom>
+            <photo>https://upload.wikimedia.org/wikipedia/en/6/6f/Kyle_MacLachlan_Dune.jpg</photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
     </livre>
@@ -144,7 +145,7 @@
             <!-- optional in order-->
             <pays>Royaume-Uni</pays>
             <!-- image URL -->
-            <photo></photo>
+            <photo>http://ia.media-imdb.com/images/M/MV5BMjIzMzY0MjgzMl5BMl5BanBnXkFtZTgwMDU5OTAzMTE@._V1__SX1859_SY766_.jpg</photo>
             <commentaire>Personnage principal</commentaire>
         </personnage>
         <personnage>
