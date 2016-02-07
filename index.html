@@ -2,13 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zakaria Soliman</title>
+    <title>TP1 IFT3225</title>
 </head>
 <body>
-    <h1>Zakaria Soliman</h1>
+    <h1>TP1 IFT3225</h1>
     <h3>
-        <p>Page web pour le cours ift3225</p>
+        <p>Fait par François Poitras et Zakaria Soliman</p>
     </h3>
-    <p>Test</p>
+    <h2>Choix de présentation</h2>
+    <p>Selon la page consultée, l'utilisateur peut voir soit une liste d'auteurs, soit une liste de livres. Dans le deuxième cas, il pourra cliquer sur les noms des personnages qui l'amèneront un peu plus bas dans la page. Il s'agit en fait d'une référence au tableau de personages positionnée au bon endroit, en utilisant les attributs <i>id</i> des balises <i>tr</i>. Notons que pour les personnages, les photos sont celles d'acteurs ou d'actrices qui interprètent le rôle. Notons aussi que certaines photos d'auteurs sont parfois déformées. Cela est du au fait que toutes les photos n'ont pas les mêmes dimensions, ni le même ratio hauteur-largeur. Afin d'uniformiser les images, nous avons inclu une taille fixe de 200x200 pixels dans le fichier de transformation des auteurs. Il en va de même pour les couvertures des livres, et pour les photos des personnages.</p>
+    <h2>Apprentissages</h2>
+    <p>Nous n'étions pas très familiers avec la technologie XSL. Aucun d'entre nous n'avait utilisé une telle méthode pour créer des pages web à partir de fichiers XML. Nous avons donc du apprendre comment fonctionnait ce language de transformation. Pour cela, la documentation fournie par le W3C c'est révélée d'une grande aide. De plus, le schéma RNG a posé des difficultés en ce qui concerne l'implémentation des attributs dans n'importe quel ordre. Nous avons finalement compris que cette façon de faire était simplement un charactère particulier, comme les attributs optionnels. En ce qui concerne l'introduction de données, nous n'avons pas eu de problèmes particuliers. L'auto-complétion de l'éditeur de XML s'est avéré utile pour remplir rapidement les informations. Aussi, il était relativement simple de voir si nos données étaient inexactes, en raison de la validation de syntaxe implémentée dans l'éditeur.</p>
+    <h2>Fichiers</h2>
+    <ul>
+    <li><a href='bibliotheque.xml'>bibliotheque.xml</a></li>
+    <li><a href='bibliotheque.rnc'>bibliotheque.rnc</a></li>
+    <li><a href='livres.html'>livres.html</a></li>
+    <li><a href='livre.xsl'>livre.xsl</a></li>
+    <li><a href='auteurs.html'>auteurs.html</a></li>
+    <li><a href='auteur.xsl'>auteur.xsl</a></li>
+	</ul>
 </body>
 </html>
