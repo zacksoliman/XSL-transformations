@@ -63,7 +63,10 @@
      <td>
        <xsl:for-each select="//livre[contains(@auteurs,current()/@ident)]">        
          <li>
-           <xsl:value-of select="titre"/>
+           <a>
+             <xsl:attribute name="href">livres.html</xsl:attribute>
+             <xsl:value-of select="titre"/>
+           </a>
          </li>       
        </xsl:for-each>
      </td>

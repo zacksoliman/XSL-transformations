@@ -84,7 +84,9 @@
                 <ul>
                     <xsl:for-each select="key('author-search', tokenize(@auteurs, '\s+'))">
                         <li>
-                            <xsl:value-of select="concat(nom, ', ', prenom)"/>
+                            <a><xsl:attribute name="href">auteurs.html</xsl:attribute>
+                                <xsl:value-of select="concat(nom, ', ', prenom)"/>
+                            </a>
                         </li>
                     </xsl:for-each>
                 </ul>
