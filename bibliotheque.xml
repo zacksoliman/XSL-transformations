@@ -58,9 +58,7 @@
         <prenom>Jules</prenom>
         <!-- optional in order-->
         <pays>France</pays>
-        <!-- image URL -->
-        <photo></photo>
-        <commentaire></commentaire>
+        <photo>http://a4.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE4MDAzNDEwNzEzNjc1Mjc4.jpg</photo>
     </auteur>
     <livre langue='English' auteurs='asimov'>
         <titre>The End of Eternity</titre>
